@@ -46,4 +46,12 @@ function checkWin() {
     gameOver = true;
     alert("It's a tie!");
   }
-}
+} const resetButton = document.getElementById("reset-button");
+
+resetButton.addEventListener("click", function() {
+  for (const cell of cells) {
+    cell.textContent = "";
+  }
+  currentPlayer = "X";
+});
+
