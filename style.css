@@ -34,4 +34,14 @@ table {
   .game-over {
     background-color: lightgray;
   }
+  button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    background-color: #336699;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+  }
   
