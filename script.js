@@ -48,10 +48,12 @@ function checkWin() {
   }
 } const resetButton = document.getElementById("reset-button");
 
-resetButton.addEventListener("click", function() {
-  for (const cell of cells) {
-    cell.textContent = "";
-  }
-  currentPlayer = "X";
-});
+resetButton.addEventListener("click", resetGame);
 
+function resetGame() {
+    for (const cell of cells) {
+      cell.textContent = "";
+    }
+    currentPlayer = "X";
+  }
+  
